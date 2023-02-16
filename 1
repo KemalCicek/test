@@ -1,0 +1,23 @@
+#! /bin/bash
+
+echo "Welcome to Ztopia"
+echo "Please make your selection"
+echo "Then see what will happens"
+
+read -p " Select 1, 2 or 3 :" x
+     case $x in
+          
+          1 )
+          
+                echo ~;;
+          
+          2 )
+          
+               pwd;;
+          
+          3 )
+               echo "vcs"
+               git --version;;
+          * )
+               echo "wrong choosie"
+esac         
